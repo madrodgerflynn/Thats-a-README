@@ -1,7 +1,7 @@
 // TODO: Include packages needed for this application
 
 //Installed package.json & package-lock.json
-
+const { default: inquirer } = require("inquirer");
 // TODO: Create an array of questions for user input
 const questions = [
   {
@@ -46,7 +46,13 @@ const questions = [
 function writeToFile(fileName, data) {}
 
 // TODO: Create a function to initialize app
-function init() {}
-
+function init() {
+  inquirer.prompt;
+  ({ questions }.then((data) => {
+    FileSystem.writeToFile("log.txt", JSON.stringify(data), (data) => {
+      console.log("Success!");
+    });
+  }));
+}
 // Function call to initialize app
 init();

@@ -1,7 +1,8 @@
-// TODO: Include packages needed for this application
+const path = require("path");
+const fs = require("fs");
+const inquirer = require("inquirer");
+const generateMarkdown = require("./utils/generateMarkdown");
 
-//Installed package.json & package-lock.json
-const { default: inquirer } = require("inquirer");
 // TODO: Create an array of questions for user input
 const questions = [
   {
@@ -10,13 +11,7 @@ const questions = [
     message: "Please provide a short description of your project.",
     name: "description",
   },
-  {
-    // ToC
-    type: "checkbox",
-    message: "Would you like your README to include a table of contents?",
-    choices: ["yes", "no"],
-    name: "tOc",
-  },
+
   {
     //Installation
     type: "input",
@@ -36,23 +31,36 @@ const questions = [
     name: "contributors",
   },
   {
+    //Tests
     type: "input",
-    message: "Please provide ",
-    name: "description",
+    message: "Please provide what tests you used?",
+    name: "tests",
+  },
+  {
+    //Licenses
+    type: "list",
+    message: "please choose the licesnses used",
+    choices: ["MIT", "Mozilla", "Google"],
+    name: "licenses",
+  },
+  {
+    type: "content",
+    message: "madrodgerflynn@gmail.com",
+    name: "email",
   },
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+  return fs.writeFileSync(path.join(process.cwd(), fileName), data);
+}
 
 // TODO: Create a function to initialize app
 function init() {
-  inquirer.prompt;
-  ({ questions }.then((data) => {
-    FileSystem.writeToFile("log.txt", JSON.stringify(data), (data) => {
-      console.log("Success!");
-    });
-  }));
+  inquirer.prompt(questions).then((inquirerResponses) => {
+    writeToFile("README.md", generateMarkdown({ ...inquirerResponses }));
+    console.log("Success!");
+  });
 }
 // Function call to initialize app
 init();

@@ -55,7 +55,7 @@ const questions = [
   },
   {
     type: "content",
-    message: "What is your github handle? @:",
+    message: "What is your github handle (@):",
     name: "github",
   },
 ];

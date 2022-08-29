@@ -1,10 +1,10 @@
-# Something Cool
+# silly willys adventure club
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 
   ## Description 
 
-  its awesome
+  for the love of god please make the GOP stop 
 
   ## Table of Contents 
 
@@ -18,11 +18,11 @@
   ## Installation 
 
   To install necessary dependencies, follow these steps:
-    cool cool cool 
+    why must they continually seek to stop progress
 
    ## Usage
    
-   blah balh blach 
+   is that what we must have in order to become even better
 
 
    ## License
@@ -32,15 +32,15 @@
 
    ## Contributors
 
-   none
+   or is it the beginning of the end?
 
    ## Tests 
 
-   none
+   I thought we would have been further by now
 
    ## Questions
 
-   For any questions about this project, contact me directly at madrodgerflynn@gmail.com You can find more of my work at [madrodgerflynn](https://github.com/madrodgerflynn).
+   For any questions about this project, contact me directly at madrodgerflynn@gmail.com You can find more of my work on my Github @ [madrodgerflynn](https://github.com/madrodgerflynn).
 
 
 

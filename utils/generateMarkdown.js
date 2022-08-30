@@ -2,18 +2,9 @@ function renderLicenseBadge(license) {
   if (license !== "none") {
     return `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)`;
   }
-  // if (license == "Mozilla") {
-  //   return `[![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)`;
-  // }
+
   return "";
 }
-
-// function renderLicenseLink(license) {
-//   if (license !== "none") {
-//     return `![License Link](https://shields.io/) `;
-//   }
-//   return "";
-// }
 
 function renderLicenseSection(license) {
   if (license !== "none") {
@@ -31,9 +22,13 @@ function generateMarkdown(data) {
 
   ## Description 
 
+  ------------
+
   ${data.description}
 
   ## Table of Contents 
+
+  ----------
 
   * [Installation](#installation) 
   * [Usage](#usage)
@@ -44,10 +39,14 @@ function generateMarkdown(data) {
 
   ## Installation 
 
+  ---------
+
   To install necessary dependencies, follow these steps:
     ${data.install}
 
    ## Usage
+
+   ---------
    
    ${data.usage}
 
@@ -57,13 +56,19 @@ function generateMarkdown(data) {
 
    ## Contributors
 
+  --------
+
    ${data.contributors}
 
    ## Tests 
 
+  -----------
+
    ${data.tests}
 
    ## Questions
+
+__________________
 
    For any questions about this project, contact me directly at ${
      data.email
@@ -71,9 +76,12 @@ function generateMarkdown(data) {
     data.github
   }](https://github.com/${data.github}).
 
+  ______________________
+  ## Images
 
-
-`;
+  This is an area where any User images may be linked.
+  
+  `;
 }
 
 module.exports = generateMarkdown;

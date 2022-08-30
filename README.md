@@ -1,12 +1,16 @@
-# silly willys adventure club
+# That's-a-README
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 
   ## Description 
 
-  for the love of god please make the GOP stop 
+  ------------
+
+  This is an application that allows the user to create a README file by answering just a few short questions.
 
   ## Table of Contents 
+
+  ----------
 
   * [Installation](#installation) 
   * [Usage](#usage)
@@ -17,12 +21,16 @@
 
   ## Installation 
 
+  ---------
+
   To install necessary dependencies, follow these steps:
-    why must they continually seek to stop progress
+    To install this project, you will need to make sure and have a terminal open that corresponds to the correct directory.
 
    ## Usage
+
+   ---------
    
-   is that what we must have in order to become even better
+   After the User makes sure they are in the wirte directory, all they will need to do is run "node index.js". Questions will populate one at a time and will fill in the README
 
 
    ## License
@@ -32,15 +40,22 @@
 
    ## Contributors
 
-   or is it the beginning of the end?
+  --------
+
+   There were no additional contributors for this project.
 
    ## Tests 
 
-   I thought we would have been further by now
+  -----------
+
+   There were no tests used in this project.
 
    ## Questions
 
+__________________
+
    For any questions about this project, contact me directly at madrodgerflynn@gmail.com You can find more of my work on my Github @ [madrodgerflynn](https://github.com/madrodgerflynn).
 
-
+  ______________________
+  ## Images
 
